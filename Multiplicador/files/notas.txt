@@ -1,0 +1,2 @@
+Este fichero no contiene la palabra clave.
+Solo texto normal para comprobar que da 0.

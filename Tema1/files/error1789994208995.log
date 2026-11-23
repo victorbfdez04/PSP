@@ -1,0 +1,2 @@
+Error: no se ha encontrado o cargado la clase principal com.mycompany.Ejercicios.Multiplicador
+Causado por: java.lang.ClassNotFoundException: com.mycompany.Ejercicios.Multiplicador

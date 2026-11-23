@@ -9,5 +9,15 @@ package ejercicios.ej7;
  * @author b15-01m
  */
 public class Ruleta {
-    
+    public void comenzar Juego() throws InterruptedException {
+
+    // Inicializamos la banca
+    Banca banca = new Banca();
+
+    // Inicializamos los 4 jugadores
+    Jugador [] jugadores = new Jugador [4];
+    for (int i = 0; i < 4; i++) {
+    jugadores[i] = new Jugador(i+1, banca);
+
+    }
 }

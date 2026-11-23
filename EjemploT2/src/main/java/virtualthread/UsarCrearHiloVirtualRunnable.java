@@ -39,9 +39,9 @@ public class UsarCrearHiloVirtualRunnable {
 		//comprobar la version de Java
 		System.out.println(Runtime.version());
 		
-		//crearHiloVirtual();
+		crearHiloVirtual();
 		
-		crearMuchosHilosVirtuales();
+		//crearMuchosHilosVirtuales();
 		
 		
 		

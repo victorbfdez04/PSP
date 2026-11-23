@@ -11,15 +11,26 @@ package hilos;
  */
 public class HiloTAC extends Thread {
 	
-	@Override
+//	@Override
+//	public void run() {
+//		while(true) {
+//			System.out.println("TAC");
+//			try {
+//				Thread.sleep(500);
+//			} catch (InterruptedException e) {
+//				e.printStackTrace();
+//			}
+//		}
+//	}
+    	@Override
 	public void run() {
-		while(true) {
-			System.out.println("TAC");
-			try {
-				Thread.sleep(500);
-			} catch (InterruptedException e) {
-				e.printStackTrace();
-			}
+            try{
+		while (!Thread.currentThread().isInterrupted()) {
+                    System.out.println("TAC");
+                    Thread.sleep(500);
 		}
+            } catch (InterruptedException e) {
+		Thread.currentThread().interrupt();
+            }
 	}
 }
